@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vendia - Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #F9F9FF;
+      color: #333;
+    }
+    .container {
+      display: flex;
+    }
+    aside {
+      width: 220px;
+      background: #EEE8FF;
+      height: 100vh;
+      padding: 20px;
+    }
+    aside h1 {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    aside ul {
+      list-style: none;
+      padding: 0;
+    }
+    aside ul li {
+      margin: 10px 0;
+      cursor: pointer;
+    }
+    main {
+      flex: 1;
+      padding: 30px;
+    }
+    .cards {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .card {
+      background: #DCCEFF;
+      padding: 20px;
+      border-radius: 12px;
+      flex: 1;
+      text-align: center;
+    }
+    .login, .register {
+      width: 300px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #A874FF;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login">
+  <h2>Iniciar sesión</h2>
+  <input type="email" placeholder="Correo electrónico" />
+  <input type="password" placeholder="Contraseña" />
+  <button>Iniciar sesión</button>
+</div>
+
+<div class="register">
+  <h2>Registrarse</h2>
+  <input type="text" placeholder="Nombre" />
+  <input type="email" placeholder="Correo electrónico" />
+  <input type="password" placeholder="Contraseña" />
+  <input type="password" placeholder="Confirmar contraseña" />
+  <button>Registrarse</button>
+</div>
+
+<div class="container">
+  <aside>
+    <h1>VENDIA</h1>
+    <ul>
+      <li>Dashboard</li>
+      <li>Productos</li>
+      <li>Clientes</li>
+      <li>Ventas</li>
+      <li>Compras</li>
+      <li>Informes</li>
+    </ul>
+  </aside>
+  <main>
+    <div class="cards">
+      <div class="card">Productos: 210</div>
+      <div class="card">Clientes: 150</div>
+      <div class="card">Ventas: 95</div>
+      <div class="card">Compras: 72</div>
+    </div>
+    <!-- Aquí puedes seguir agregando tablas, gráficas, etc. -->
+  </main>
+</div>
+
+</body>
+</html>
